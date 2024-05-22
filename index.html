@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form name="employeeForm" action="#" onsubmit="return SubmitForm()">
+            <h2>Employee Form</h2>
+            <br />
+            <div class="row">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" />
+                <div class="error" id="nameErr"></div>
+            </div>
+            <br />
+            <div class="row">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" />
+                <div class="error" id="lastNameErr"></div>
+            </div>
+            <br />
+            <div class="row">
+                <label for="date">Date Of Birth</label>
+                <input type="date" name="date" id="dob" />
+                <div class="error" id="dateErr"></div>
+            </div>
+            <br />
+            <div class="row">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" />
+                <div class="error" id="emailErr"></div>
+            </div>
+            <br />
+            <div class="row">
+                <label>Gender</label>
+                <br />
+                <label class="radio">
+                    <input type="radio" name="gender" value="Male" /> Male
+                </label>
+                <label class="radio">
+                    <input type="radio" name="gender" value="Female" /> Female
+                </label>
+                <div class="error" id="genderErr"></div>
+            </div>
+            <br />
+            <div class="row">
+                <label for="department">Department</label>
+                <select name="department" id="department">
+                    <option value="Select">Select</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Security">Security</option>
+                    <option value="Sanitation">Sanitation</option>
+                </select>
+            </div>
+            <br />
+            <div class="row">
+                <label for="position">Position</label>
+                <select name="position" id="position">
+                    <option value="Select">Select</option>
+                    <option value="Head Of Staff">Head Of Staff</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Assistant Manager">Assistant Manager</option>
+                    <option value="Security">Security</option>
+                    <option value="Head Of Department">Head Of Department</option>
+                    <option value="CEO">CEO</option>
+                </select>
+            </div>
+            <br />
+            <div class="row">
+                <label for="salary">Salary</label>
+                <input type="number" name="salary" id="salary" />
+            </div>
+            <br />
+            <div class="row">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear Data</button>
+            </div>
+        </form>
+
+        <form name="SalaryBreakdownForm">
+            <h2>Salary Breakdown</h2>
+            <br />
+            <div class="row1">
+                <label for="basicAllowance">Basic Allowance</label>
+                <input type="number" id="basicAllowance" name="allowance" readonly />
+                <label for="clothings">Clothings</label>
+                <input type="number" id="clothings" name="cloth" readonly />
+            </div>
+            <br />
+            <div class="row2">
+                <label for="transport">Transport</label>
+                <input type="number" id="transport" name="trans" readonly />
+                <label for="tax">Tax</label>
+                <input type="number" id="tax" name="tax" readonly />
+            </div>
+            <br />
+            <div class="row3">
+                <label for="utility">Utility</label>
+                <input type="number" id="utility" name="utility" readonly />
+                <label for="pfa">P.F.A</label>
+                <input type="number" id="pfa" name="PFA" readonly />
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
